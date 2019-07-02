@@ -1,0 +1,23 @@
+{
+  "name": "fromscratch_vuejs",
+  "version": "0.0.1",
+  "description": "VueJs testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yegorich555/FromScratch_VueJs.git"
+  },
+  "keywords": [
+    "Vue",
+    "VueJs"
+  ],
+  "author": "Yahor Halubchyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yegorich555/FromScratch_VueJs/issues"
+  },
+  "homepage": "https://github.com/Yegorich555/FromScratch_VueJs#readme"
+}
