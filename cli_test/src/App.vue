@@ -8,11 +8,6 @@
   </div>
 </template>
 
-<style lang="postcss">
-@import "normalize";
-@import "sanitize";
-</style>
-
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
