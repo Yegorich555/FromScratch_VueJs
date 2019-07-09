@@ -1,0 +1,16 @@
+module.exports = {
+  root: true,
+  env: {
+    node: true
+  },
+  extends: ["plugin:vue/essential", "@vue/prettier"],
+  rules: {
+    "max-len": "off", //it doesn't work with prettier https://github.com/prettier/prettier-eslint/issues/62
+    "no-constant-condition": ["error", { "checkLoops": false }],
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+  },
+  parserOptions: {
+    parser: "babel-eslint"
+  }
+};
