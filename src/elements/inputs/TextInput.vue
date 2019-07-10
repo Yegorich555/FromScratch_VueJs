@@ -21,20 +21,12 @@ export default {
 </script>
 
 <template>
-  <div :class="$stl.formControl">
+  <div :class="$style.formControl">
     <label v-if="label" :for="id" :aria-label="label" v-once>{{ label }}</label>
     <input :id="id" v-model.lazy="model" type="text" :name="name" />
   </div>
 </template>
 
-<style module="$stl" lang="scss">
-.form-control {
-  label,
-  input {
-    display: block;
-  }
-  input {
-    width: 100%;
-  }
-}
+<style module lang="scss">
+@import "./textInput.scss";
 </style>

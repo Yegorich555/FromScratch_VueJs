@@ -1,11 +1,13 @@
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import BaseForm from "@/elements/inputs/BaseForm.vue";
+import TextInput from "@/elements/inputs/TextInput.vue";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    BaseForm,
+    TextInput
   }
 };
 </script>
@@ -13,13 +15,15 @@ export default {
 <template>
   <div>
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
     <!-- intellisense for named style module doesn't work: typing [$a.] isn't show the popup despite on $style is. But [$style] works only for single style module -->
     <div :class="$a.blue">Test splitted css</div>
     <div>{{ $a }}</div>
     <br />
     <div :class="$b.blueSass">Test splitted scss</div>
     <div>{{ $b }}</div>
+    <BaseForm>
+      <TextInput label="Test Label" name="firstInput"></TextInput>
+    </BaseForm>
   </div>
 </template>
 

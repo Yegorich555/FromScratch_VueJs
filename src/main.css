@@ -1,2 +1,9 @@
 @import "normalize.css";
 @import "sanitize.css";
+
+input:focus,
+button:focus,
+a:focus {
+    outline: 4px dotted #e59700;
+    outline-offset: -2px;
+}
