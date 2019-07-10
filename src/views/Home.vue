@@ -14,7 +14,7 @@ export default {
   <div>
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <!-- intellisense for named style module doesn't work: typing [$a.] is't show the popup despite on $style is. But [$style] works only for single style module -->
+    <!-- intellisense for named style module doesn't work: typing [$a.] isn't show the popup despite on $style is. But [$style] works only for single style module -->
     <div :class="$a.blue">Test splitted css</div>
     <div>{{ $a }}</div>
     <br />
