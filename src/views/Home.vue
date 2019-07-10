@@ -1,13 +1,10 @@
 <script>
-// @ is an alias to /src
-import BaseForm from "@/elements/inputs/BaseForm.vue";
-import TextInput from "@/elements/inputs/TextInput.vue";
+import TestForm from "@/views/TestForm";
 
 export default {
   name: "home",
   components: {
-    BaseForm,
-    TextInput
+    TestForm
   }
 };
 </script>
@@ -21,9 +18,7 @@ export default {
     <br />
     <div :class="$b.blueSass">Test splitted scss</div>
     <div>{{ $b }}</div>
-    <BaseForm>
-      <TextInput label="Test Label" name="firstInput"></TextInput>
-    </BaseForm>
+    <TestForm></TestForm>
   </div>
 </template>
 
